@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RealEstate</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="/images/logo.png" type="image/icon type">
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,700&family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- font-family: 'Poppins', sans-serif;
+  font-family: 'Righteous', cursive; -->
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="top-header">
+      <div class="container">
+        <ul>
+          <li><a href="#" data-lang="home">HOME</a></li>
+          <li><a href="#" data-lang="about">ABOUT</a></li>
+          <li><a href="#" data-lang="agents">AGENTS</a></li>
+          <li><a href="#" data-lang="blog">BLOG</a></li>
+          <li><a href="#" data-lang="contact">CONTACT</a></li>
+          <li>
+            <select>
+              <option value="en" selected>EN</option>
+              <option value="ar">AR</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-header">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="images/logo.png" alt=""></a>
+        </div>
+        <div class="lists">
+          <ul>
+            <li><a href="#" data-lang="buy">BUY</a></li>
+            <li><a href="#" data-lang="sale">SALE</a></li>
+            <li><a href="#" data-lang="rent">RENT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header -->
+  <!-- Section -->
+  <section>
+    <div class="main-section">
+      <div class="main-section-background">
+        <img src="../images/blog/1.jpg" alt="">
+      </div>
+      <div class="sliding-circles">
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-regular fa-circle"></i>
+      </div>
+      <div class="container">
+        <div class="main-section-ads">
+          <div class="main-section-ads-content">
+            <h3 data-lang="title">2 Bed Rooms and 1 Dinning Room Aparment on Sale</h3>
+            <span data-lang="location"><i class="fa-solid fa-location-dot"></i>1890 Syndey, Australia</span>
+            <p data-lang="pharagraph">Until he extends the circle of his compassion to all living things, man will not himself find peace.</p>
+            <button>$ 20,000,000</button>
+          </div>
+        </div>
+        <div class="buy-sale">
+          <div class="search-side">
+            <h3 data-lang="buyAndSaleTitle">Buy, Sale & Rent</h3>
+            <div class="input">
+              <input type="search" placeholder="Search Of Properties" class="first-input">
+            </div>
+            <div class="selectors">
+              <select name="buy">
+                <option value="" data-lang="buy">Buy</option>
+                <option value="" data-lang="sale">Rent</option>
+                <option value="" data-lang="rent">Sale</option>
+              </select>
+              <select name="price">
+                <option value="" data-lang="price">Price</option>
+                <option value="">$150,000 - $200,000</option>
+                <option value="">$200,000 - $250,000</option>
+                <option value="">$250,000 - $300,000</option>
+                <option value="" data-lang="above">$300,000 - above</option>
+              </select>
+              <select name="property">
+                <option value="" data-lang="property">Property</option>
+                <option value="" data-lang="apartment">Apartment</option>
+                <option value="" data-lang="buliding">Building</option>
+                <option value="" data-lang="officeSpace">Office Space</option>
+              </select>
+              <button data-lang="findNow">Find Now</button>
+            </div>
+          </div>
+          <div class="login-side">
+            <span data-lang="join">Join now and get updated with all the properties deals.</span>
+            <button data-lang="login">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Featured -->
+    <div class="featured">
+      <div class="container">
+        <div class="head">
+          <h3 data-lang="featuredProperties">Featured Properties</h3>
+          <a href="#" data-lang="viewAllListing">View All Listing</a>
+        </div>
+        <div class="houses">
+          <!-- Box -->
+          <div class="house-box">
+            <div class="img">
+              <img src="../images/properties/1.jpg" alt="">
+              <span data-lang="sold">Sold</span>
+            </div>
+            <div class="box-title">
+              <h3 data-lang="royalInn">Royal Inn</h3>
+            </div>
+            <div class="box-price">
+              <span data-lang="boxPrice">Price $234,900</span>
+            </div>
+            <div class="house-rooms">
+              <div class="room">1</div>
+              <div class="room">2</div>
+              <div class="room">2</div>
+              <div class="room">5</div>
+            </div>
+            <div class="button">
+              <button data-lang="viewDetails">View Details</button>
+            </div>
+          </div>
+          <!-- Box -->
+          <!-- Box -->
+          <div class="house-box">
+            <div class="img">
+              <img src="../images/properties/2.jpg" alt="">
+              <span data-lang="sold">Sold</span>
+            </div>
+            <div class="box-title">
+              <h3 data-lang="royalInn">Royal Inn</h3>
+            </div>
+            <div class="box-price">
+              <span data-lang="boxPrice">Price $234,900</span>
+            </div>
+            <div class="house-rooms">
+              <div class="room">1</div>
+              <div class="room">2</div>
+              <div class="room">2</div>
+              <div class="room">5</div>
+            </div>
+            <div class="button">
+              <button data-lang="viewDetails">View Details</button>
+            </div>
+          </div>
+          <!-- Box -->
+          <!-- Box -->
+          <div class="house-box">
+            <div class="img">
+              <img src="../images/properties/3.jpg" alt="">
+              <span data-lang="sold">Sold</span>
+            </div>
+            <div class="box-title">
+              <h3 data-lang="royalInn">Royal Inn</h3>
+            </div>
+            <div class="box-price">
+              <span data-lang="boxPrice">Price $234,900</span>
+            </div>
+            <div class="house-rooms">
+              <div class="room">1</div>
+              <div class="room">2</div>
+              <div class="room">2</div>
+              <div class="room">5</div>
+            </div>
+            <div class="button">
+              <button data-lang="viewDetails">View Details</button>
+            </div>
+          </div>
+          <!-- Box -->
+          <!-- Box -->
+          <div class="house-box">
+            <div class="img">
+              <img src="../images/properties/4.jpg" alt="">
+              <span data-lang="sold">Sold</span>
+            </div>
+            <div class="box-title">
+              <h3 data-lang="royalInn">Royal Inn</h3>
+            </div>
+            <div class="box-price">
+              <span data-lang="boxPrice">Price $234,900</span>
+            </div>
+            <div class="house-rooms">
+              <div class="room">1</div>
+              <div class="room">2</div>
+              <div class="room">2</div>
+              <div class="room">5</div>
+            </div>
+            <div class="button">
+              <button data-lang="viewDetails">View Details</button>
+            </div>
+          </div>
+          <!-- Box -->
+          <!-- Box -->
+          <div class="house-box">
+            <div class="img">
+              <img src="../images/properties/5.jpg" alt="">
+              <span data-lang="sold">Sold</span>
+            </div>
+            <div class="box-title">
+              <h3 data-lang="royalInn">Royal Inn</h3>
+            </div>
+            <div class="box-price">
+              <span data-lang="boxPrice">Price $234,900</span>
+            </div>
+            <div class="house-rooms">
+              <div class="room">1</div>
+              <div class="room">2</div>
+              <div class="room">2</div>
+              <div class="room">5</div>
+            </div>
+            <div class="button">
+              <button data-lang="viewDetails">View Details</button>
+            </div>
+          </div>
+          <!-- Box -->
+        </div>
+        <div class="bottom-section">
+          <!-- About -->
+          <div class="about">
+            <h3 data-lang="about">About Us</h3>
+            <p data-lang="theStandard">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+            <a href="#" data-lang="learnMore">Learn More</a>
+          </div>
+          <!-- About -->
+          <!-- Recommended -->
+          <div class="recommended">
+            <div class="recommended-head">
+              <h3 data-lang="recommendedProperties">Recommended Properties</h3>
+            </div>
+            <!-- Box -->
+            <div class="recommended-box">
+              <div class="img">
+                <img src="../images/blog/1.jpg" alt="">
+              </div>
+              <div class="details">
+                <h4 data-lang="integer">Integer sed porta quam</h4>
+                <span>$300,000</span>
+                <button data-lang="moreDetails">More Details</button>
+              </div>
+            </div>
+            <!-- Box -->
+            <div class="recommended-slider">
+              <i class="fa-regular fa-circle"></i>
+              <i class="fa-regular fa-circle"></i>
+              <i class="fa-regular fa-circle"></i>
+              <i class="fa-regular fa-circle"></i>
+            </div>
+          </div>
+          <!-- Recommended -->
+        </div>
+      </div>
+    </div>
+    <!-- Featured -->
+  </section>
+  <!-- Section -->
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="columns">
+        <!-- Column -->
+        <div class="column info">
+          <div class="column-head">
+            <h3 data-lang="information">Information</h3>
+          </div>
+          <div class="column-lists">
+            <ul>
+              <li><a href="#" data-lang="about">About</a></li>
+              <li><a href="#" data-lang="agents">Agents</a></li>
+              <li><a href="#" data-lang="blog">Blog</a></li>
+              <li><a href="#" data-lang="contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Column -->
+        <div class="column news">
+          <div class="column-head">
+            <h3 data-lang="newsletter">Newsletter</h3>
+          </div>
+          <div class="column-content">
+            <p data-lang="get">Get notified about the latest properties in our marketplace.</p>
+            <input type="email" placeholder="Enter Your Email Address" class="second-input">
+            <button data-lang="notify">Notify Me!</button>
+          </div>
+        </div>
+        <!-- Column -->
+        <div class="column follow">
+          <div class="column-head">
+            <h3 data-lang="follow">Follow Us</h3>
+          </div>
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <!-- Column -->
+        <div class="column contact">
+          <div class="column-head">
+            <h3 data-lang="contact">Contact Us</h3>
+          </div>
+          <div class="column-content">
+            <div class="column-content-head">
+              <span>Bootstrap Realestate Inc.</span>
+            </div>
+            <div class="contact-information">
+              <span><i class="fa-solid fa-location-dot"></i> 8290 Walk Street, Australia</span>
+              <span><i class="fa-solid fa-envelope"></i> hello@domain.com</span>
+              <span><i class="fa-solid fa-phone"></i> (123) 456-7890</span>
+            </div>
+          </div>
+        </div>
+        <!-- Column -->
+      </div>
+      <h4 data-lang="copyright">Copyright. All rights reserved.</h4>
+    </div>
+  </footer>
+  <!-- Footer -->
+  <script src="index.js"></script>
+</body>
+</html>
