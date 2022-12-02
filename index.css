@@ -705,11 +705,19 @@ footer .container h4 {
 @media(max-width: 819px) {
   .header .main-header .container {
     padding: 15px 300px;
-}
+  }
 }
 @media(max-width: 799px) {
   .header .main-header .container {
     padding: 15px 0;
+  }
+}
+@media(max-width: 600px) {
+  section .featured .houses .house-box {
+    width: 100%;
+  }
+  section .featured .houses .house-box .img img {
+    width: 100%;
   }
 }
 @media(max-width: 500px) {
