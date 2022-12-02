@@ -27,7 +27,7 @@ let languages = {
     royalInn: "Royal Inn",
     boxPrice: "Price $234,900",
     viewDetails: "View Details",
-    theStandard: `The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.`,
+    theStandard: `Write Details Here`,
     learnMore: "Learn More",
     recommendedProperties: "Recommended Properties",
     integer: "Integer sed porta quam",
@@ -67,7 +67,7 @@ let languages = {
     royalInn: "Royal Inn",
     boxPrice: "السعر $234,900",
     viewDetails: "عرض التفاصيل",
-    theStandard: `الجزء القياسي من لوريم إيبسوم المستخدم منذ القرن الخامس عشر مستنسخ أدناه للمهتمين. تم أيضًا نسخ الأقسام 1.10.32 و 1.10.33 من "de Finibus Bonorum et Malorum" بواسطة Cicero في شكلها الأصلي الدقيق ، مصحوبة بنسخ باللغة الإنجليزية من ترجمة عام 1914 بواسطة H. Rackham.`,
+    theStandard: "اكتب التفاصيل هنا",
     learnMore: "عرض المزيد",
     moreDetails: "المزيد من التفاصيل",
     information: "المعلومات",
@@ -85,14 +85,14 @@ const selector = document.querySelector(".header select");
 
 selector.addEventListener("change", (event) => {
   updateLanguage(event.target.value);
-  // localStorage.setItem("lang", event.target.value);
+  localStorage.setItem("lang", event.target.value);
 });
 
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   const language = localStorage.getItem("lang") || "en";
-//   updateLanguage(language);
-// });
+document.addEventListener("DOMContentLoaded", () => {
+  const language = localStorage.getItem("lang") || "en";
+  updateLanguage(language);
+});
 
 
 function updateLanguage(language) {
@@ -136,35 +136,3 @@ function updateLanguage(language) {
     document.dir = "ltr";
   }
 };
-
-
-// const languages = {
-//   en: {
-//     home: "Home",
-//     about: "About",
-//   },
-//   ar: {
-//     home: "الصفحة الرئيسية",
-//     about: "من نحن",
-//   },
-// };
-
-// let selector = document.querySelector(".top-header select");
-
-// selector.addEventListener("change", (event) => {
-//   updateLanguage(event.target.value);
-// });
-
-// function updateLanguage(language) {
-//   let elements = document.querySelectorAll("[data-lang]");
-//   elements.forEach((element) => {
-//     let key = element.getAttribute("data-lang");
-//     console.log(key);
-//     element.textContent = languages[language][key];
-//   });
-//   if (language === "en") {
-//     document.dir = "ltr";
-//   } else {
-//     document.dir = "rtl";
-//   };
-// };

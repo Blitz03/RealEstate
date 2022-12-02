@@ -20,7 +20,7 @@
 .header .top-header ul {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: start;
 }
 .header .top-header ul li {
   padding: 7px 15px;
@@ -52,7 +52,7 @@
 /* Top Header */
 /* Main Header */
 .header .main-header {
-  background: url("/images/bgmain.png");
+  background: url("images/bgmain.png");
 }
 .header .main-header .container{
   display: flex;
@@ -97,7 +97,7 @@ section .main-section .main-section-background::before {
   background-color: black;
 }
 section .main-section .container {
-  background-image: url("/images/bginside.jpg");
+  background-image: url("images/bginside.jpg");
 }
 section .main-section .container .main-section-ads {
   position: absolute;
@@ -231,7 +231,7 @@ section .buy-sale .login-side button:hover {
 section .featured {
   padding-top: 50px;
   padding-bottom: 100px;
-  background-image: url(../images/bgmain.png);
+  background-image: url("images/bgmain.png");
   position: relative;
 }
 section .featured .head {
@@ -259,8 +259,6 @@ section .featured .houses{
   margin-top: 10px;
   margin-bottom: 80px;
   flex-wrap: wrap;
-  /* display: grid;
-  column-gap: 10px; */
   width: 120%;
 }
 section .featured .houses .house-box {
@@ -442,7 +440,7 @@ section .featured .recommended .recommended-slider i:hover {
 
 /* Footer */
 footer {
-  background: url("/images/bg.jpg");
+  background: url("images/bg.jpg");
   padding: 10px 0;
   height: 300px;
   position: relative;
