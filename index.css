@@ -14,7 +14,7 @@
   padding: 0 400px;
 }
 /* Top Header */
-.header .top-header{
+.header .top-header {
   background-color: #111;
 }
 .header .top-header ul {
@@ -54,17 +54,28 @@
 .header .main-header {
   background: url("images/bgmain.png");
 }
-.header .main-header .container{
+.header .main-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 400px;
 }
-.header .main-header .container .lists ul{
+.header .main-header .container .logo {
+}
+.header .main-header .container .logo a {
+  color: #009ee0;
+}
+.header .main-header .container .logo a h1 {
+  font-size: 22px;
+}
+.header .main-header .container .logo img {
+  max-width: 100px;
+}
+.header .main-header .container .lists ul {
   display: flex;
   gap: 40px;
 }
-.header .main-header .container .lists ul li a{
+.header .main-header .container .lists ul li a {
   color: #72b70f;
   font-size: 20px;
   transition: .2s;
@@ -252,7 +263,7 @@ section .featured .head a:hover {
   color: #1a9554;
   text-decoration: underline;
 }
-section .featured .houses{
+section .featured .houses {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -266,12 +277,19 @@ section .featured .houses .house-box {
   padding: 10px;
   text-align: center;
   border-radius: 3px;
+  width: 240px;
 }
 section .featured .houses .house-box .img {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
   position: relative;
 }
-section .featured .houses .house-box .img img{
-  width: 200px;
+section .featured .houses .house-box .img img {
+  width: 280px;
+  height: 150px;
+  flex-shrink: 0;
+  transition: .2s;
 }
 section .featured .houses .house-box .img span {
   background-color: #71b70fbb;
@@ -279,10 +297,10 @@ section .featured .houses .house-box .img span {
   bottom: 7px;
   right: 0;
   color: white;
-  font-size: 12px;
+  font-size: 18px;
   width: 100%;
   text-align: end;
-  padding: 2px 3px;
+  padding: 0px 15px;
 }
 section .featured .houses .house-box .box-title h3 {
   color: #72b70f;
@@ -295,12 +313,18 @@ section .featured .houses .house-box .box-title h3:hover {
   text-decoration: underline;
   color: #111;
 }
+section .featured .houses .house-box .box-address p {
+  font-weight: 400;
+  border-bottom: 1px solid rgb(215, 215, 215);
+  padding-bottom: 5px;
+  font-size: 14px;
+}
 section .featured .houses .house-box .box-price {
   border-bottom: 1px solid rgb(215, 215, 215);
   padding: 5px 0;
 }
 section .featured .houses .house-box .box-price span {
-  font-size: 14px;
+  font-size: 16px;
   color: rgb(71, 71, 71);
 }
 section .featured .houses .house-box .house-rooms {
@@ -308,7 +332,13 @@ section .featured .houses .house-box .house-rooms {
   gap: 5px;
   align-items: center;
   justify-content: center;
-  margin: 10px 0 30px 0;
+  margin: 10px 0;
+}
+section .featured .houses .house-box a {
+  color: #72b70f;
+}
+section .featured .houses .house-box a i {
+  margin-right: 5px;
 }
 section .featured .houses .house-box .house-rooms .room {
   border-radius: 50%;
@@ -324,6 +354,9 @@ section .featured .houses .house-box .house-rooms .room {
 section .featured .houses .house-box .house-rooms .room:hover {
   background-color: #72b70f;
 }
+section .featured .houses .house-box .house-rooms .room:hover + i {
+  color: #72b70f;
+}
 section .featured .houses .house-box .button button {
   border: none;
   border-radius: 20px;
@@ -338,24 +371,26 @@ section .featured .houses .house-box .button button {
 section .featured .houses .house-box .button button:hover {
   background-color: #428bca;
 }
-section .featured .sliding {
+section .featured .houses .house-box .img button {
   position: absolute;
-  bottom: 40%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 15px;
-  color: #bbc4c1;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
+  background-color: transparent;
+  padding: 5px;
+  border: none;
 }
-section .featured .sliding i {
-  transition: .1s;
+section .featured .houses .house-box .img .btn-right {
+  right: 5px;
 }
-section .featured .sliding i:hover {
-  color: #869791;
+
+section .featured .houses .house-box .img button:last-child {
+  position: absolute;
+  left: 5px;
 }
-section .featured .sliding i:first-of-type {
-  color: #869791;
+section .featured .houses .house-box .img button i {
+  font-size: 35px;
+  color: #72b70f;
 }
 section .featured .bottom-section {
   display: flex;
@@ -395,8 +430,19 @@ section .featured .recommended .recommended-box {
   display: flex;
   gap: 30px;
 }
+section .featured .recommended .recommended-box .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 140px;
+  height: 90px;
+  overflow: hidden;
+  cursor: pointer;
+}
 section .featured .recommended .recommended-box .img img {
   width: 140px;
+  height: 90px;
 }
 section .featured .recommended .recommended-box h4 {
   font-size: 15px;
@@ -523,7 +569,7 @@ footer .container .columns .column.follow .icons i{
   cursor: pointer;
   padding: 10px 0;
 }
-footer .container .columns .column.contact .column-content{
+footer .container .columns .column.contact .column-content {
   color: #999;
   padding-top: 10px;
   font-size: 13px;
@@ -531,9 +577,16 @@ footer .container .columns .column.contact .column-content{
 footer .container .columns .column.contact .column-content .column-content-head {
   margin-bottom: 5px;
 }
-footer .container .columns .column.contact .column-content .contact-information span{
+footer .container .columns .column.contact .column-content .contact-information span {
   display: block;
   padding-bottom: 2px;
+  color: #72b70f;
+}
+footer .container .columns .column.contact .column-content .contact-information span a {
+  color: #72b70f;
+}
+footer .container .columns .column.contact .column-content .contact-information span i {
+  margin: 0 5px;
 }
 footer .container h4 {
   position: absolute;
@@ -547,9 +600,6 @@ footer .container h4 {
 
 /* Media */
 @media(max-width: 1565px) {
-  .main-header img {
-    display: none;
-  }
   .header .main-header .container {
     justify-content: center;
   }
@@ -635,9 +685,6 @@ footer .container h4 {
   footer {
     height: 630px;
   }
-  .main-header img {
-    display: none;
-  }
   .header .main-header .container {
     padding: 10px 0;
   }
@@ -647,7 +694,7 @@ footer .container h4 {
   section .main-section .container .main-section-ads {
     width: 400px;
   }
-  section .main-section .container .main-section-ads p{
+  section .main-section .container .main-section-ads p {
     display: none;
   }
   section .buy-sale {
@@ -712,12 +759,13 @@ footer .container h4 {
     padding: 15px 0;
   }
 }
-@media(max-width: 600px) {
+@media(max-width: 567px) {
   section .featured .houses .house-box {
-    width: 100%;
+    width: 300px;
   }
   section .featured .houses .house-box .img img {
     width: 100%;
+    height: 160px;
   }
 }
 @media(max-width: 500px) {

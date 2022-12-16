@@ -8,10 +8,11 @@ let languages = {
     buy: "Buy",
     sale: "Sale",
     rent: "Rent",
-    title: "2 Bed Rooms and 1 Dinning Room Aparment on Sale",
-    location: "1890 Syndey, Australia",
-    pharagraph: "Until he extends the circle of his compassion to all living things, man will not himself find peace.",
-    buyAndSaleTitle: "Buy, Sale & Rent",
+    // title: "2 Bed Rooms and 1 Dinning Room Aparment on Sale",
+    // location: "1890 Syndey, Australia",
+    // pharagraph:
+    //   "Until he extends the circle of his compassion to all living things, man will not himself find peace.",
+    // buyAndSaleTitle: "Buy, Sale & Rent",
     login: "Login",
     price: "Price",
     above: "above",
@@ -23,9 +24,9 @@ let languages = {
     join: "Join now and get updated with all the properties deals.",
     featuredProperties: "Featured Properties",
     viewAllListing: "View All Listing",
-    sold: "Sold",
-    royalInn: "Royal Inn",
-    boxPrice: "Price $234,900",
+    // sold: "Sold",
+    // royalInn: "Royal Inn",
+    // boxPrice: "Price $234,900",
     viewDetails: "View Details",
     theStandard: `Write Details Here`,
     learnMore: "Learn More",
@@ -48,10 +49,11 @@ let languages = {
     buy: "بيع",
     sale: "شراء",
     rent: "تأجير",
-    title: "شقة غرفتين نوم وغرفة طعام واحدة للبيع",
-    location: "1890 Syndey, Australia",
-    pharagraph: "ما لم يوسع الإنسان دائرة شفقته إلى كل الكائنات الحية ، فلن يجد الإنسان السلام نفسه.",
-    buyAndSaleTitle: "بيع وشراء وتأجير",
+    // title: "شقة غرفتين نوم وغرفة طعام واحدة للبيع",
+    // location: "1890 Syndey, Australia",
+    // pharagraph:
+    //   "ما لم يوسع الإنسان دائرة شفقته إلى كل الكائنات الحية ، فلن يجد الإنسان السلام نفسه.",
+    // buyAndSaleTitle: "بيع وشراء وتأجير",
     login: "تسجيل الدخول",
     price: "السعر",
     above: "فما فوق",
@@ -88,12 +90,10 @@ selector.addEventListener("change", (event) => {
   localStorage.setItem("lang", event.target.value);
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const language = localStorage.getItem("lang") || "en";
   updateLanguage(language);
 });
-
 
 function updateLanguage(language) {
   let elements = document.querySelectorAll("[data-lang]");
@@ -118,21 +118,21 @@ function updateLanguage(language) {
             list.style.padding = "15px";
           });
           listA.style.fontSize = "15px";
-        };
-      };
-      let mediaQuery = window.matchMedia('(max-width: 546px)');
+        }
+      }
+      let mediaQuery = window.matchMedia("(max-width: 546px)");
       myFunction(mediaQuery);
       mediaQuery.addListener(myFunction);
     });
     let input = document.querySelector(".first-input");
     input.placeholder = "البحث عن عقارات";
-    let secondInput = document.querySelector(".second-input")
+    let secondInput = document.querySelector(".second-input");
     secondInput.placeholder = "أدخل عنوان بريدك الالكتروني";
   } else {
-    let secondInput = document.querySelector(".second-input")
+    let secondInput = document.querySelector(".second-input");
     let input = document.querySelector(".first-input");
     secondInput.placeholder = "Enter Your Email Address";
-    input.placeholder = "Search Of Properties";
+    // input.placeholder = "Search Of Properties";
     document.dir = "ltr";
   }
-};
+}
